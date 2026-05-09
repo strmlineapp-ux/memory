@@ -1,0 +1,7 @@
+# Memory search database (not versioned)
+history.db
+
+# Credentials and secrets — never commit these
+.github-token
+.env
+credentials/
