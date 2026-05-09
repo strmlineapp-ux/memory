@@ -13,7 +13,6 @@ Read this file at session start. Load specific topic files only when relevant.
 | `tools/comfyui-mcp.md` | ComfyUI MCP server (artokun) — local instance, TypeScript. Entry: `npx -y comfyui-mcp`. Repo at ~/Documents/MCP Tools/comfyui-mcp | 2026-05-09 |
 | `tools/davinci-resolve.md` | DaVinci Resolve MCP server (328 tools) — configured in settings.json. Repo at ~/Documents/MCP Tools/davinci-mcp | 2026-05-09 |
 | `wiki-maintenance.md` | Wiki entity isolation, wikilink semantics — NCore/MSM/Tamarind separation rules | 2026-05-08 |
-| `credentials/linkedin.json` | Bernardo's LinkedIn login (gitignored) — see playwright.md for usage | 2026-05-07 |
 
 ## Cross-Memory Sync Rule
 
