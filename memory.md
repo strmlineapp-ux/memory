@@ -6,7 +6,8 @@ Read this file at session start. Load specific topic files only when relevant.
 |------|-------------|--------------|
 | `general.md` | Cross-project conventions and preferences | 2026-05-08 |
 | `ai-memory-quickref.md` | Operational guide for all 5 memory levels, systems, and file paths | 2026-05-08 |
-| `tools/github-mcp.md` | GitHub MCP server config and usage patterns (41 tools) — Docker image at ghcr.io/github | 2026-05-08 |
+| `tools/github-mcp.md` | GitHub PAT token location, gh CLI patterns for memory repo backup and Git operations | 2026-05-09 |
+| `tools/github-mcp-docker.md` | GitHub MCP server config and usage patterns (41 tools) — Docker image at ghcr.io/github | 2026-05-09 |
 | `tools/notebooklm.md` | NotebookLM CLI and MCP server docs (BROKEN auth) — use `nlm` CLI, NOT MCP | 2026-05-08 |
 | `tools/playwright.md` | Playwright MCP server patterns (includes LinkedIn login for profiles) | 2026-05-07 |
 | `tools/comfyui-mcp.md` | ComfyUI MCP server (artokun) — local instance, TypeScript. Entry: `npx -y comfyui-mcp`. Repo at ~/Documents/MCP Tools/comfyui-mcp | 2026-05-09 |
