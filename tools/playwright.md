@@ -2,13 +2,12 @@
 name: Playwright MCP Server (@playwright/mcp) — browser automation via Claude Code MCP tools
 description: Microsoft's Playwright MCP server provides ~52 tools for full browser automation (navigation, clicking/typing via accessibility snapshots). Tool prefix: mcp__playwright*. Use as fallback for WebFetch when pages require JS execution, login state, or form interaction.
 type: reference
-originSessionId: 6960811c-8363-4b6f-acca-5c13d326c5af
 ---
 ## Overview
 - **Package**: `@playwright/mcp` (github.com/microsoft/playwright-mcp)
 - **Installed via**: `npx @playwright/mcp` (runs on every Claude Code startup)
 - **Tool prefix**: `mcp__playwright*` — all tools accessible via Bash with this naming pattern
-- **Runs in**: `~/.claude.json` under `"playwright"` MCP server config
+- **Runs in**: `~/.claude/settings.json` under `"playwright"` MCP server config (global)
 
 ## How It Works
 Unlike WebFetch (which fetches raw HTML), Playwright runs a real browser and interacts with pages through **structured accessibility snapshots** — not screenshots. The LLM navigates by reading element labels from the accessibility tree and clicking/typing on them directly.

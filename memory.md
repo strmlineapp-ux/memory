@@ -4,19 +4,30 @@ Read this file at session start. Load specific topic files only when relevant.
 
 | File | Description | Last updated |
 |------|-------------|--------------|
-| `general.md` | Cross-project conventions and preferences | 2026-05-08 |
-| `ai-memory-quickref.md` | Operational guide for all 5 memory levels, systems, and file paths | 2026-05-08 |
-| `tools/github-mcp.md` | GitHub PAT token location, gh CLI patterns for memory repo backup and Git operations | 2026-05-09 |
-| `tools/github-mcp-docker.md` | GitHub MCP server config and usage patterns (41 tools) — Docker image at ghcr.io/github | 2026-05-09 |
-| `tools/notebooklm.md` | NotebookLM CLI and MCP server docs (BROKEN auth) — use `nlm` CLI, NOT MCP | 2026-05-08 |
-| `tools/playwright.md` | Playwright MCP server patterns (includes LinkedIn login for profiles) | 2026-05-07 |
-| `tools/comfyui-mcp.md` | ComfyUI MCP server (artokun) — local instance, TypeScript. Entry: `npx -y comfyui-mcp`. Repo at ~/Documents/MCP Tools/comfyui-mcp | 2026-05-09 |
-| `tools/davinci-resolve.md` | DaVinci Resolve MCP server (328 tools) — configured in settings.json. Repo at ~/Documents/MCP Tools/davinci-mcp | 2026-05-09 |
-| `wiki-maintenance.md` | Wiki entity isolation, wikilink semantics — NCore/MSM/Tamarind separation rules | 2026-05-08 |
+| `general.md` | Cross-project conventions and preferences (WebSearch fallback, hook config) | 2026-05-11
+| `ai-memory-quickref.md` | Operational guide for all 5 memory levels, systems, and file paths | 2026-05-09
+| `tools/github-cli.md` | GitHub PAT, gh CLI patterns, memory backup repo setup | 2026-05-11
+| `tools/github-mcp-docker.md` | Docker MCP server config (41 tools), Python subprocess testing pattern, protocol rules and error codes | 2026-05-11
+| `tools/notebooklm.md` | NotebookLM CLI and MCP server docs (BROKEN auth) — use `nlm` CLI, NOT MCP | 2026-05-11
+| `tools/playwright.md` | Playwright MCP server patterns (includes LinkedIn login for profiles) — global config in settings.json | 2026-05-10
+| `tools/obsidian-cli.md` | Obsidian CLI (v1.12+) — terminal interface to vault via IPC, 130+ commands for notes/daily/tasks/search/properties. Skill installed at ~/.claude/skills/obsidian-cli/, plugin in settings.json | 2026-05-11
+| `domain/davinci-resolve-mcp.md` | DaVinci Resolve Studio 21 MCP automation: server setup, architecture, tool-to-object map (30 tools), workflow patterns (project lifecycle, media import, clip property control with transform/crop/composite/retiming keys, color node ops, render pipeline), AI features (scriptable vs UI-only) | 2026-05-11
+| `domain/claude-code-hooks.md` | Claude Code hook events, registration patterns, execution gotchas (tilde expansion, pathlib.replace), anti-patterns | 2026-05-10
+| `domain/comfyui.md` | ComfyUI 0.20.1 macOS app: API format rules, subgraph expansion pattern, node gotchas (TextGenerate, ComfySwitchNode), installed models | 2026-05-11
 
-## Cross-Memory Sync Rule
+## Canonical Template (project MEMORY.md)
 
-At session start, after reading this file:
-1. Note the Last updated dates in the table above
-2. If any project MEMORY.md has content worth promoting to a global tools/ or domain/ file, flag it
-3. Update the Last updated date on this file after any changes
+When creating a new project `MEMORY.md`, use this template:
+
+```markdown
+# {Project Name} - Project Memory
+
+## Global Memory
+
+Cross-project memory topics are indexed at ~/.claude/memory/MEMORY.md (loaded automatically).
+Read it for the full list of available topic files.
+
+## Project Notes
+```
+
+When a new file is added to `~/.claude/memory/`, update only the global MEMORY.md.

@@ -1,0 +1,6 @@
+{
+  "default_threshold": 4,
+  "Freelance": { "count": 0, "last_consolidated": "", "threshold_override": null },
+  "NCore": { "count": 0, "last_consolidated": "", "threshold_override": null },
+  "Sandbox": { "count": 0, "last_consolidated": "", "threshold_override": null }
+}

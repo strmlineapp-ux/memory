@@ -75,3 +75,4 @@ Five memory levels stack together. Each serves a different recall need — use t
 | Memory Palace data | `~/.mempalace/` (ChromaDB + JSONL) |
 | memsearch config | `~/.memsearch/config.toml` |
 | Vault wiki rules | `<project>/Vault/CLAUDE.md` (never write to raw/) |
+| **Master reference** | `Core/.claude/memory-systems-reference.md` — full architecture, implementation status, outstanding items |

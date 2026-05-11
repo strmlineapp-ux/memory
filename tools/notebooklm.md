@@ -135,20 +135,7 @@ Organize sources within a notebook into categories (e.g., "background", "primary
 - **Emoji**: `nlm label emoji <label_id> -p strm.line.app@gmail.com` — set a visual marker
 - **Move source**: `nlm label move <source_id> -p strm.line.app@gmail.com` — assign a source to a label
 
-## 17. MCP Server Tools (notebooklm-mcp v2.0.11 — BROKEN, use for reference only)
-**WARNING:** All tools fail with `needs_auth` / `"Not authenticated or browser not ready"`.
-
-When calling MCP tools, pass a **request object** (NOT flat kwargs):
-- `chat_with_notebook`: request `{message, notebook_id?}`
-- `send_chat_message`: request `{message, wait_for_response?}`
-- `get_chat_response`: request `{timeout=30}`
-- `navigate_to_notebook`: request `{notebook_id}`
-
-## 18. Session RAG (Follow-up)
-- CLI: pass same `conversation_id` from previous query response (`-c <id>`)
-- MCP: pass same `session_id` (not yet working)
-
-## 19. Agent Guide — Interpreting User Requests
+## 17. Agent Guide — Interpreting User Requests
 When the user mentions "NotebookLM" or related terms, map them to CLI commands:
 
 - **"use NotebookLM on X"** → query a notebook about topic X (unless they specify which)
@@ -162,7 +149,6 @@ When the user mentions "NotebookLM" or related terms, map them to CLI commands:
 - **"export to Google Docs"** → **report only** — create report first, then `nlm export to-docs <notebook_id> <artifact_id>`
 - **"create a note"** → `nlm note create <notebook_id> --title "..." -c "<content>"`
 - **"show my notes"** → `nlm note list <notebook_id>`
-- **"add this to multiple notebooks"** → batch operations (`nlm batch`)
 - **"find sources about X" / "research this topic"** → `nlm research start "<query>" -s web`
 - **"discover new sources on X and add to my notebook"** → `nlm research start "<query>" --auto-import`
 - **"create audio and slides for my notebook"** → `nlm pipeline run <id>` (or create them manually)
@@ -170,5 +156,5 @@ When the user mentions "NotebookLM" or related terms, map them to CLI commands:
 - **"find notebooks about X"** → `nlm tag select "<query>"` (uses tags for search)
 - **"organize my sources" / "categorize these sources by topic"** → `nlm label auto <notebook_id>`
 
-## 20. Notebook inventory (~14 notebooks, varies over time)
+## 18. Notebook inventory (~14 notebooks, varies over time)
 Portuguese Cuisine & Culture (7), LLMs @M5 Max (50), Vines of Portugal: A Technical and Narrative History (27), Inferno Blues: The Deluxe Brand Bible (3+ artifacts), Nyxx — Research, Frameworks Series Dev Template, Atalaia Research.
